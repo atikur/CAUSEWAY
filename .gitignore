@@ -1,0 +1,25 @@
+# BEGIN Lens Studio managed Agents-Docs block
+.mcp.json
+.cursor/mcp.json
+.vscode/mcp.json
+.codex/config.toml
+.claude/settings.local.json
+# END Lens Studio managed Agents-Docs block
+
+# Added by Lens Studio (LEAF plugin)
+leaf_plugin_settings.json
+
+# Local signing keys and editor output
+.env
+.env.*
+*.pem
+*.esproj.*.lock
+.DS_Store
+/.virtual-scene.json
+/Cache/
+/Support/
+/Workspaces/
+/PluginsUserPreferences/
+/causeway-leaf-session-template.json
+/causeway-leaf-submission-run.json
+/Submission/

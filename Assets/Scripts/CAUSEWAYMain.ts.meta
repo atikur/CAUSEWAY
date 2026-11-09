@@ -1,0 +1,72 @@
+- !<AssetImportMetadata/3d11964c-ba3a-4539-a565-c4b09ff1fc26>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 3cba6e65-cf02-4d7e-86db-d73d68d06334
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 3cba6e65-cf02-4d7e-86db-d73d68d06334
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 8899f55a-e31c-4650-b706-f44cd51ee245
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/8899f55a-e31c-4650-b706-f44cd51ee245>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: a4de7024-27b9-41b0-8863-4c47a86fe3a4
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    audio: false
+    brace: false
+    braceArea: false
+    controls: false
+    hud: false
+    sectionMultiplier: false
+    stepSeconds: false
+    view: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - view: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      hud: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      controls: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      brace: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      audio: !<MappingBased.AssignableType_5> 00000000-0000-0000-0000-000000000000
+      stepSeconds: 0.200000
+      sectionMultiplier: !<float> 10.000000
+      braceArea: 0.000080
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"CAUSEWAY – Predict / test / inspect / repair"}'
+    - '// @ui {"widget":"group_start", "label":"References"}'
+    - '// @input AssignableType_1 view {"hint":"Parametric spatial truss"}'
+    - '// @input AssignableType_2 hud {"hint":"Investigation readout"}'
+    - '// @input AssignableType_3 controls {"hint":"UIKit experiment controls"}'
+    - '// @input AssignableType_4 brace {"hint":"Two snap-based brace handles"}'
+    - '// @input AssignableType_5 audio {"hint":"Spatial audio cue controller"}'
+    - '// @ui {"widget":"group_end"}'
+    - '// @ui {"widget":"group_start", "label":"Settings"}'
+    - '// @input float stepSeconds = 0.2 {"hint":"Playback seconds between identical prescribed load steps", "widget":"slider", "min":0.1, "max":0.7, "step":0.05}'
+    - '// @input float sectionMultiplier = 20 {"hint":"Selected-member section-area multiplier per repair", "widget":"slider", "min":2, "max":20, "step":1}'
+    - '// @input float braceArea = 0.00008 {"hint":"Area in square meters of an added brace", "widget":"slider", "min":0.00002, "max":0.0002, "step":0.00002}'
+    - '// @ui {"widget":"group_end"}'

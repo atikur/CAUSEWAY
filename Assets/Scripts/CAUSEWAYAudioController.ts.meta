@@ -1,0 +1,46 @@
+- !<AssetImportMetadata/a823f0dd-e10d-4eac-aef9-1ae0c2d6b62a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 5b12e311-3df4-43f7-9f8c-c9e117f023f3
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 5b12e311-3df4-43f7-9f8c-c9e117f023f3
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> d1fcd40d-d22b-4d41-90be-2e785570739c
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d1fcd40d-d22b-4d41-90be-2e785570739c>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 9ddaf4cf-db0a-4105-bf82-4ab6fd9a9d3d
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    volume: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - volume: 0.350000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input float volume = 0.35 {"hint":"Cue volume; Sound control mutes all cues", "widget":"slider", "min":0, "max":1, "step":0.05}'

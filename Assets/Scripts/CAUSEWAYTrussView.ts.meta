@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/9c4bb6dd-4110-488b-8bdc-d607abc3b6a2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a482623c-5051-46ab-af31-3cef9c271222
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a482623c-5051-46ab-af31-3cef9c271222
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 94c79448-7861-40bd-8858-06ac4117dd0b
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/94c79448-7861-40bd-8858-06ac4117dd0b>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 7a8e9cfb-e1a5-436a-b959-b02b2e157982
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    compressionColor: false
+    debugColliders: false
+    displacementGain: false
+    displayCmPerMeter: false
+    hitWidth: false
+    material: false
+    selectionColor: false
+    tensionColor: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      displayCmPerMeter: 10.500000
+      displacementGain: !<float> 30.000000
+      hitWidth: 0.800000
+      debugColliders: false
+      tensionColor: !<Vec4> {x: 0.120000, y: 0.820000, z: 1.000000, w: 1.000000}
+      compressionColor: !<Vec4> {x: 1.000000, y: 0.430000, z: 0.150000, w: 1.000000}
+      selectionColor: !<Vec4> {x: 1.000000, y: 0.870000, z: 0.140000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"CAUSEWAY – Spatial truss"}'
+    - '// @input Asset.Material material {"hint":"Vertex-color material for batched parametric geometry"}'
+    - '// @input float displayCmPerMeter = 10.5 {"hint":"Centimeters of display per engineering meter; does not change solver dimensions", "widget":"slider", "min":5, "max":14, "step":0.5}'
+    - '// @input float displacementGain = 30 {"hint":"Visible elastic displacement magnification, explicitly labeled in the HUD", "widget":"slider", "min":0, "max":100, "step":1}'
+    - '// @input float hitWidth = 0.8 {"hint":"Member selection hit width in centimeters", "widget":"slider", "min":0.4, "max":2, "step":0.1}'
+    - '// @input bool debugColliders {"hint":"Show member collider debug shapes"}'
+    - '// @input vec4 tensionColor = "{0.12,0.82,1,1}" {"hint":"Tension color", "widget":"color"}'
+    - '// @input vec4 compressionColor = "{1,0.43,0.15,1}" {"hint":"Compression color", "widget":"color"}'
+    - '// @input vec4 selectionColor = "{1,0.87,0.14,1}" {"hint":"Selected member color", "widget":"color"}'

@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/87461240-bb45-4cda-808f-716ed7ea1b37>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> bc5aae83-22c5-457a-a89b-73926a05559e
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> bc5aae83-22c5-457a-a89b-73926a05559e
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ccbc8d04-6b3f-440a-b145-7866e8fa55ab
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ccbc8d04-6b3f-440a-b145-7866e8fa55ab>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 5117bbe4-7050-4d83-86bb-df87e257ce23
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    textColor: false
+    textScale: false
+    widthCm: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - widthCm: !<float> 46.000000
+      textScale: !<float> 1.000000
+      textColor: !<Vec4> {x: 0.900000, y: 0.970000, z: 1.000000, w: 1.000000}
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"CAUSEWAY – Investigation readout"}'
+    - '// @input float widthCm = 46 {"hint":"Width of the readout in centimeters", "widget":"slider", "min":40, "max":50, "step":1}'
+    - '// @input float textScale = 1 {"hint":"Typography scale for accessibility", "widget":"slider", "min":1, "max":1.4, "step":0.05}'
+    - '// @input vec4 textColor = "{0.9,0.97,1,1}" {"hint":"Readout text color", "widget":"color"}'

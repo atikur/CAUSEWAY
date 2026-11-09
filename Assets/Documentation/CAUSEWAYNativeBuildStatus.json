@@ -1,0 +1,116 @@
+{
+  "project": "CAUSEWAY",
+  "date": "2026-11-09",
+  "status": "verified_in_lens_studio_preview",
+  "projectFile": "CAUSEWAY.esproj",
+  "environment": {
+    "lensStudio": "5.23.2.26081320",
+    "target": "SPECS",
+    "preview": "SPECS 27 / Interactive",
+    "deviceConnected": false
+  },
+  "packages": {
+    "SpectaclesInteractionKit": "2.0.0 descriptor; runtime log reports 0.18.0",
+    "SpectaclesUIKit": "2.0.0",
+    "Leaf": "2.0.2",
+    "meshMaterial": "SimpleVertexBaseColor.lspkg"
+  },
+  "verification": {
+    "scope": "Compact UI and submission code in Lens Studio 5.23.2, SPECS 27 Interactive Preview",
+    "nativeTypeScript": "passed",
+    "runtimeStartup": "passed with no warnings or errors in the post-refresh startup log",
+    "controllerRegression": "Passed with the real Main controller and solver using stubbed Lens views. Repair outcomes persist at earlier comparison steps, a duplicate brace is rejected without spending budget and can be retried, Undo restores budget and selection, and the completed timeline stays within the shared range.",
+    "projectSave": "saved through Lens Studio",
+    "scenarios": {
+      "causeway-native-core": "passed",
+      "causeway-lesson-flow": "passed",
+      "causeway-brace-snapping": "passed",
+      "causeway-control-reach": "passed",
+      "causeway-three-investigation-demo": "passed"
+    },
+    "scenarioRunNote": "All five scenarios passed serially through Lens Studio MCP after the final comparison heading refinement. The lesson-flow scenario also verifies that Later cannot move the finished repair beyond the last shared load step and that Earlier/Later still work within that range.",
+    "visualQA": "Inspected the compact readout, truss, contextual actions and recording frames through all three investigations.",
+    "tooling": "Lens Studio MCP verified the project and account, recompiled TypeScript, checked Preview startup, and ran LEAF. The demo uses footage recorded in the native Preview panel.",
+    "lastVerifiedUtc": "2026-11-09T11:28:08+00:00"
+  },
+  "artifacts": {
+    "submissionDemo": {
+      "youtubeUrl": "https://youtu.be/nYQhKyssYoo",
+      "durationSeconds": 92,
+      "footage": "SPECS 27 Interactive Preview. The introduction shows a camera orbit. The lesson footage shows section repairs across all three investigations. The final comparison refinements passed all five LEAF scenarios after the lesson footage was recorded.",
+      "audio": "English OpenAI Cedar narration and locally synthesized project cues"
+    },
+    "devpostUrl": "https://devpost.com/software/causeway-zfx1cp"
+  },
+  "controls": {
+    "primary": "Predict/run, pause/resume, repair, test repair, explain/finish, next challenge or restart lesson",
+    "Next member": "Cycles members in the design currently in view as an alternative to spatial selection",
+    "Section x20": "Uses material budget to increase selected member area",
+    "Add brace": "Drag both colored handles to joints, release to snap, press Add brace again to commit",
+    "Undo": "Restores the last valid design edit",
+    "Earlier/Later": "Step through recorded loads, clamped to the shared range during comparison and after completion",
+    "Compare": "Switch baseline and repair at identical shared loading",
+    "Rotate": "Rotate the model 30 degrees",
+    "Force colors": "Toggle force visualization; starts hidden on transfer challenge",
+    "Sound": "Mute or enable interaction cues",
+    "Reset": "Reset the current investigation",
+    "More": "Opens secondary controls in the same six-slot panel; Main actions returns to the task"
+  },
+  "implementationNotes": [
+    "SI core adapted into Assets/Scripts/CAUSEWAY*.ts; display conversion stays separate from solver dimensions and loads",
+    "Native Lesson helper renamed from require to assertPhase to avoid Lens asset-scanner dependency detection",
+    "Playback preserves frame-time remainder",
+    "Comparison keeps the repair outcome and actual capacity-limit time visible independently of the shared load step",
+    "LEAF 2.0.2 scripted drag fixture receives the real SIK 500 cm ray range; package sources remain unmodified",
+    "IK scenario awaits avatar readiness"
+  ],
+  "modelBoundaries": [
+    "Small displacement, linear elastic, pin-jointed axial truss",
+    "Declared educational capacities",
+    "Stop at first prescribed step meeting calculated capacity",
+    "Exclude bending, buckling, fatigue, fracture and nonlinear collapse",
+    "Compare up to and including the earliest modeled limit shared by the two designs",
+    "Engineering dimensions and loads remain SI; centimeter scaling is presentation only"
+  ],
+  "credits": [
+    "CLAD local algorithmic SFX engine; generated sound cues use no sampled recordings",
+    "Material Symbols icons imported through Lens Studio IconSelector",
+    "Snap SpectaclesUIKit, SpectaclesInteractionKit and LEAF retain their package licenses",
+    "Parametric truss geometry authored with MeshBuilder; vertex-color shader provided by CLAD SimpleVertexBaseColor package"
+  ],
+  "planning": {
+    "skill": "official challengepost/learn-specs plan-lens installed",
+    "brief": "../../devpost/design-brief.md",
+    "approval": "User approved assistant-prepared answers and explicitly delegated the process",
+    "method": "Delegated review after the initial native prototype and before the compact layout changes",
+    "publishedInterviewCompleted": false,
+    "processRecord": "../../devpost/process-record.md"
+  },
+  "compactUI": {
+    "readout": {
+      "position": [
+        0,
+        17,
+        -110
+      ],
+      "size": [
+        46,
+        12
+      ]
+    },
+    "controls": {
+      "position": [
+        0,
+        -18,
+        -110
+      ],
+      "size": [
+        46,
+        12
+      ]
+    },
+    "authoredVerticalEnvelopeCm": 47,
+    "actions": "At most six contextual actions, with More / Main actions secondary view; inactive actions hidden",
+    "state": "implemented, compiled, saved, and verified in Preview"
+  }
+}

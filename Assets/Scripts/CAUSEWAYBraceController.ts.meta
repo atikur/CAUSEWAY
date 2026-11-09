@@ -1,0 +1,53 @@
+- !<AssetImportMetadata/f7cc6a79-1028-43a4-9ac9-33419c080547>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f8f06651-6a89-4605-b170-52ec629b69af
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f8f06651-6a89-4605-b170-52ec629b69af
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 70ae5391-4d02-42fe-becb-b8fe45e191d4
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/70ae5391-4d02-42fe-becb-b8fe45e191d4>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  VersionPrerelease: ""
+  UpdateOrder: 0
+  ComponentUid: 0cd36ab4-834f-46e7-a01c-813eaa34f24b
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    material: false
+    snapCm: false
+    view: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - view: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      material: !<reference.Material> 00000000-0000-0000-0000-000000000000
+      snapCm: !<float> 3.000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @ui {"widget":"label", "label":"CAUSEWAY – Brace endpoints"}'
+    - '// @input AssignableType_1 view {"hint":"Truss view used to find snap positions"}'
+    - '// @input Asset.Material material {"hint":"Vertex-color material for visible brace handles"}'
+    - '// @input float snapCm = 3 {"hint":"Snap radius in display centimeters", "widget":"slider", "min":1, "max":6, "step":0.5}'
